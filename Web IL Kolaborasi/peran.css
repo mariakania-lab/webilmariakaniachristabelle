@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(152, 246, 243);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navbar {
+    background-color: cornflowerblue;
+    padding: 12px 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #00796b;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.navbar a:hover {
+    background-color: thistle;
+    color: rgb(110, 85, 110);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00acc1;
+    border-radius: 12px;
+    padding: 10px 0;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    flex-direction: column;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background: transparent;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.sdgs-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin: 30px;
+    clear: both;
+}
+
+.sdgs-left {
+    background: #85ff7f;
+    padding: 25px 15px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sdgs-title {
+    color: #007a3d;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sdgs-subtitle {
+    color: #007a3d;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.sdgs-img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.sdgs-img:hover {
+    transform: scale(1.03);
+}
+
+.sdgs-right {
+    background: white;
+    border: 5px solid #85ff7f;
+    border-radius: 18px;
+    padding: 20px 25px;
+    margin-bottom: 4px;
+}
+
+.sdgs-right p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #004a2a;
+    margin-bottom: auto;
+}

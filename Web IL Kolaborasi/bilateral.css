@@ -1,0 +1,87 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(152, 246, 243);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sdgs-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.sdgs-left{
+    background: #85ff7f;
+    padding: 25px 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.sdgs-title{
+    color: #007a3d;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sdgs-subtitle{
+    color: #007a3d;
+    font-size: 17px;
+}
+
+.sdgs-img-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.sdgs-img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    transition: opacity 0.4s ease;
+}
+
+.sdgs-img-text {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.35s ease;
+}
+
+.sdgs-img-wrapper:hover .sdgs-img {
+    opacity: 0.2;
+}
+
+.sdgs-img-wrapper:hover .sdgs-img-text {
+    opacity: 1;
+}
